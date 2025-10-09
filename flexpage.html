@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin: auto;
+            padding-top: 0px;
+            padding-left: 185px;
+            background-color:rgb(3, 30, 85);
+            color: white;
+        }
+        ul{
+            list-style: none;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            gap: 30px;
+            background-color: rgb(3, 30, 85);
+            color: white;
+            padding-right: 200px;
+            font-size: large;
+        }
+        a{
+            color:white;
+        }
+        a:hover{
+            color: blue;
+        }
+        .first{
+            background-color:rgb(3, 30, 85);
+            color: white;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            padding: 50px 70px;
+            gap: 50px;
+            justify-content: space-around;
+            font-size: large;
+        }
+        .img{
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width:400px;
+            border-radius: 5px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border-style: none;
+        }
+        button:active{
+            color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        .box-row{
+            display: flex;
+            margin: 20px 200px;
+            justify-content: space-between;
+            gap:10px;
+            padding: 0 60px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        .img1{
+            height: 200px;
+            width: 200px;
+            border-style: solid;
+            border-color: blue;
+            border-radius: 15px;
+        }
+        .box p {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .third{
+            background-color: gray;
+            color: black;
+            padding: 70px 400px;
+            text-align: center;
+            font-size: larger;
+        }
+        .call{
+            background-color: blue;
+            color: white;
+            padding: 20px 100px;
+            margin: 70px 100px;
+        }
+        .five{
+            background-color: rgb(3, 30, 85);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+    <nav>
+        <h2>Header Logo</h2>
+    <ul>
+        <li><a href="#">header link one   </a></li>
+        <li><a href="#">header link two  </a></li>
+        <li><a href="#">header link three  </a></li>
+    </ul>
+    </nav>
+        <div class="content">
+            <div class="text">
+            <h1 style="text-align: left;">This website is awesome</h1>
+                <p>This webpage has some subtext that goes here under the main title.<br> 
+                    It's smaller font and the color is lower constast.</p>
+                <button>Sign up</button>
+        </div>
+        <div class="img">
+            This is the place for an image
+        </div>
+        </div>
+    </div>
+    <div class="second">
+    <h1>Some random information.</h1>
+    <div class="box-row">
+        <div class="box">
+            <div class="img1"></div>
+            <p>This is some subtext under an illustration or image</p>
+        </div>
+        <div class="box">
+            <div class="img1"></div>
+            <p>This is some subtext under an illustration or image</p>
+        </div>
+        <div class="box">
+            <div class="img1"></div>
+            <p>This is some subtext under an illustration or image</p>
+        </div>
+        <div class="box">
+            <div class="img1"></div>
+            <p>This is some subtext under an illustration or image</p>
+        </div>
+    </div>
+</div>
+<div class="third">
+    <p  style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This is an inspiring quote,or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+    <p style="text-align: right;"><strong>-Thor, God of Thunder</strong></p>
+</div>
+<div class="four">
+    <div class ="call">
+        <p><strong>Call to action! It's time!</strong></p>
+        <p>Sign up for our product by clicking that button right over there!</p>
+    </div>
+</div>
+<div class="five">
+    <p>Copyright @ The Odin Project 2021</p>
+</div>
+</body>
+</html>
