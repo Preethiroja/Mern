@@ -57,14 +57,14 @@
             width:400px;
             border-radius: 5px;
         }
-        button{
+        .text button{
             background-color: blue;
             color: white;
             padding: 10px;
             border-radius: 5px;
             border-style: none;
         }
-        button:active{
+        .text button:active{
             color: yellow;
         }
         h1{
@@ -106,6 +106,20 @@
             color: white;
             padding: 20px 100px;
             margin: 70px 100px;
+        }
+        .call .sign{
+              display: flex;
+              justify-content: space-between; 
+              align-items: center;
+        }
+        .call .sign button{
+            display: flex;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border-style: none;
+            border: 1px solid white
         }
         .five{
             background-color: rgb(3, 30, 85);
@@ -165,7 +179,10 @@
 <div class="four">
     <div class ="call">
         <p><strong>Call to action! It's time!</strong></p>
+        <div class="sign">
         <p>Sign up for our product by clicking that button right over there!</p>
+        <button>Sign up</button>
+        </div>
     </div>
 </div>
 <div class="five">
