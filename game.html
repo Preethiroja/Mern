@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            padding-top: 30px;
+            text-align: center;
+            color: #003049;
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .box{
+            margin-top: 70px;
+            margin-left: 31%;
+            text-align: center;
+            padding: 30px;
+            height: 300px;
+            width: 500px;
+            border: 2px solid #0077b6;;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .choice button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0077b6;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .choice button:hover {
+            background-color: #005f8a;
+            transform: scale(1.05);
+        }
+         #result {
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            min-width: 250px;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 400px){
+            h1{
+                font-size: 24px;
+            }
+            .choice button{
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+            #result{
+                font-size: 18px;
+                padding: 12px;
+                min-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ROCK PAPER SCISSOR🎮</h1>
+    <div class="box">
+    <h3>Choose your choice:</h3>
+    <div class="choice">
+        <button onClick="play('rock')">ROCK🪨</button>
+        <button onClick="play('paper')">PAPER📃</button>
+        <BUtton onClick="play('scissor')">SCISSOR✂️</BUtton>
+    </div>
+    <div id="result">Result</div>
+    </div>
+    <script>
+        function play(player){
+            const choices=['rock','paper','scissor'];
+            let computer=choices[Math.floor(Math.random()*3)];
+            let result='';
+            if(player==computer){
+                result="Draw 🙌";
+            }else if((player==='rock'&& computer==='scissor')||(player==='paper'&&computer==='rock')||(player==='scissor'&&computer==='paper')){
+                result="You Win 🏆";
+            }else{
+                result="You Lose ☹️";
+            }
+            document.getElementById("result").innerHTML=result; 
+        }
+    </script>
+</body>
+</html>
