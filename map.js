@@ -19,7 +19,7 @@ console.log(oddnum);
 let evennum=a.map((n)=>n%2==0);
 console.log(evennum);
 
-//Filter
+//using Filter 
 function isodd(num){
     return num%2!=0;
 }
