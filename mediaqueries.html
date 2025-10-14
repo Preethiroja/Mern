@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: lightcoral;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Page</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: lightcoral;
+        color: #fff;
+        margin: 0;
+        padding: 40px 20px;
+        line-height: 1.8;
+        transition: background-color 0.3s;
+    }
+
+    @media screen and (min-width: 480px) {
+        body {
+            background-color: lightblue;
+            color: #333;
+            padding: 60px 40px;
         }
-        @media screen and (min-width:480px) {
-            body{
-                background-color:lightblue;
-            }
+    }
+
+    p {
+        max-width: 800px;
+        margin: 20px auto;
+        background: rgba(255,255,255,0.2);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: background 0.3s, color 0.3s;
+    }
+
+    @media screen and (min-width: 480px) {
+        p {
+            background: rgba(255,255,255,0.8);
+            color: #333;
         }
-    </style>
+    }
+</style>
 </head>
 <body>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugit iusto nihil itaque ad error dolorum, culpa sunt eum voluptate cupiditate ratione debitis aliquam pariatur molestiae nisi corrupti quaerat! Ullam.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium voluptas quas commodi molestias voluptate dolores incidunt, voluptates maxime nam! Aperiam architecto eum expedita, debitis vitae repellendus molestias totam sequi.
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit fugit iusto nihil itaque ad error dolorum, culpa sunt eum voluptate cupiditate ratione debitis aliquam pariatur molestiae nisi corrupti quaerat! Ullam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium voluptas quas commodi molestias voluptate dolores incidunt, voluptates maxime nam! Aperiam architecto eum expedita, debitis vitae repellendus molestias totam sequi.</p>
 </body>
 </html>

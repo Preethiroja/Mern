@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f6fa;
+        }
+
+        tr:hover {
+            background-color: #d6eaf8;
+            transition: background-color 0.3s;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 500px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Dept</th>
+        </tr>
+        <tr>
+            <td>Abi</td>
+            <td>101</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>Pooja</td>
+            <td>102</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>Reena</td>
+            <td>103</td>
+            <td>CSE</td>
+        </tr>
+    </table>
+</body>
+</html>

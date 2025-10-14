@@ -5,52 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
         p {
             max-width: 800px;
-            
             line-height: 1.6;
+            margin: 0 auto 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .links {
-            display: flex;
-            flex-direction: column;
-            max-width: 200px;
-            padding-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .links a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+        }
+        .links a:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .links {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla accusamus ipsum est nemo cupiditate autem suscipit corrupti possimus aperiam velit, veniam delectus similique, enim odit quidem tempore dolores assumenda.</p>
+    <h1>Welcome</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla accusamus ipsum est nemo cupiditate autem suscipit corrupti possimus aperiam velit, veniam delectus similique, enim odit quidem tempore dolores assumenda.
+    </p>
     <div class="links">
-    <a href="home.html">Images</a>
-    <a href="grid.html">Grid</a>
-    <a href="flexpage.html">flex</a>
-    <a href="mediaqueries.html">Media Queries</a>
-    <a href="game.html">Rock Paper Scissor Game</a>
-    <a href="script.html">js function button</a>
-    <a href="script.js">script js</a>
+        <a href="home.html">Images</a>
+        <a href="grid.html">Grid</a>
+        <a href="flexpage.html">Task 1</a>
+        <a href="mediaqueries.html">Media Queries</a>
+        <a href="game.html">Rock Paper Scissor Game</a>
+        <a href="script.html">DOM</a>
+        <a href="script.js">Script JS</a>
+        <a href="Map.js">Map JS</a>
+        <a href="scriptjs.js">Scriptjs JS</a>
+        <a href="table.html">Table</a>
     </div>
-    <table border="solid">
-        <tr>
-            <td>Name</td>
-            <td>Roll no</td>
-            <td>Dept</td>
-        </tr>
-        <tr>
-            <td>Abi</td>
-            <td>101</td>
-            <td>IT</td>
-        </tr>
-        <tr>
-            <td>Pooja</td>
-            <td>102</td>
-            <td>IT</td>
-        </tr>
-        <tr>
-            <td>Reena</td>
-            <td>103</td>
-            <td>CSE</td>
-        </tr>
-    </table>
+    <footer>
+        &copy; 2025 My Website
+    </footer>
 </body>
 </html>
