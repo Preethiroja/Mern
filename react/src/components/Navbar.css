@@ -1,0 +1,27 @@
+.link {
+  display: flex;             
+  gap: 50px;                  
+  padding: 15px 30px;         
+  background: linear-gradient(90deg, #4f46e5, #a855f7, #ec4899); 
+  color: white;              
+  justify-content: flex-start; 
+  align-items: center;
+  font-size: 18px;            
+  font-weight: 500;           
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.link a {
+  text-decoration: none;      
+  color: white;               
+  transition: 0.3s;          
+}
+.link a:hover {
+  color: #facc15;             
+  text-decoration: underline;
+  text-underline-offset: 4px; 
+}
