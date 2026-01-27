@@ -1,0 +1,33 @@
+.navbar {
+  background: linear-gradient(90deg, #4f46e5, #a855f7, #ec4899); /* colorful gradient */
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.navbar ul {
+  list-style: none;       
+  display: flex;         
+  gap: 40px;              
+  margin: 0;             
+  padding: 0;             
+  align-items: center;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #facc15;        
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+body {
+  padding-top: 70px;    
+}
