@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 const Form = () => {
     const [form,setForm]=useState({
         name:"",
@@ -6,6 +6,10 @@ const Form = () => {
         age:"",
         department:""
     })
+    // when ui change the useEffect will run
+    useEffect(()=>{
+          console.log("from useEffect")
+        })
     const handleChange=(e)=>{
         const {name,value}=e.target
         setForm((prev)=>({
