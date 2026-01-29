@@ -5,7 +5,7 @@ const {createTask,getTasks,getTask,getTasksById,updateTask,deleteTask}=require("
 const {protect} =require('../middleware/authmiddleware')
 
 router.post('/newTask',protect,createTask)
-router.get('/getTasks',protect,getTasks)
+router.get('/getTasks',getTasks)
 router.get('/getTasks/:id',protect,getTasksById)
 router.get('/getTask',protect,getTask)
 router.put('/updateTask/:id',protect,updateTask)

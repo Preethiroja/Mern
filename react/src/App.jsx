@@ -7,6 +7,7 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Navbar from './components/navbar'
 import State from './hooks/State'
+import Effects from './hooks/effects'
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/about" Component={About}/>
        <Route path="/contact" Component={Contact}/>
        <Route path="/state" element={<State/>}/>
+       <Route path="/effects" element={<Effects/>}/>
     </Routes>
     <User name="Preethi" department="IT"
     skills={['HTML','CSS','JS','JAVA']} />

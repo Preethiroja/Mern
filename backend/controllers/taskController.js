@@ -15,7 +15,7 @@ exports.createTask=async(req,res)=>{
 }
 exports.getTasks=async(req, res) => {
   try {
-    const tasks=await Task.find({user:req.userId });
+    const tasks=await Task.find();
     res.json(tasks);
   } catch (error) {
     res.status(500).json(error);
